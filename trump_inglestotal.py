@@ -29,7 +29,7 @@ for l in f:
  			texto = re.sub("http.*?( |$)","",texto) # para tirar links
  			texto = re.sub("^rt @.*?: ","",texto) # pra tirar inicio do tweet que mostra ser retweet
  			
- 			#selecionar lingua inglesa
+ 			#Selecionar apenas lingua inglesa
  			if langid.classify(texto)[0] == 'en':
  			
  				print(('%s,%s,%s,%s,%s') % (id_original, data, usuario, localizacao, texto.encode('utf-8').decode('utf-8').encode('cp1252','ignore').decode('cp1252')))

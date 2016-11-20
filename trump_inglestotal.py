@@ -8,7 +8,7 @@ f = open('stream_trumpwins.txt')
 
 r = "^\{\"created_at\":\"Wed Nov 09"
 
-print('texto')
+print('id_original, data, usuario, localizacao, texto')
 
 for l in f:
 
@@ -33,5 +33,3 @@ for l in f:
  			if langid.classify(texto)[0] == 'en':
  			
  				print(('%s,%s,%s,%s,%s') % (id_original, data, usuario, localizacao, texto.encode('utf-8').decode('utf-8').encode('cp1252','ignore').decode('cp1252')))
- 
-# codigo para amostra aleatoria bash : -n 40000 trumpwins.csv > amostratrumpwins40000.csv

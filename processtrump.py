@@ -13,7 +13,7 @@ from nltk.tokenize import RegexpTokenizer
 ## CODIGO PARA FAZER MATRIZ TFIDF E CLUSTERIZACAO
 
 ## Abrir base de dados com amostra aleatoria de linhas - por causa da memoria do computador
-filename = "trumpwinstotal2.csv"
+filename = "trumpwinstotal.csv"
 n = sum(1 for line in open(filename)) - 1 #total de linhas do documento (78947), excluindo primeira
 s = 40000 #tamanho da amostra que roda no meu computador
 skip = sorted(random.sample(range(1,n+1),n-s)) #a primeira linha nao sera incluida
